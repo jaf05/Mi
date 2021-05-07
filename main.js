@@ -52,3 +52,8 @@ sr.reveal('.contact__text', {interval: 200})
 sr.reveal('.contact__input', {delay: 400})
 sr.reveal('.contact__button', {delay: 600})
 
+window.addEventListener('load', () => {
+    const contenedor_loader = document.querySelector('.contenedor_loader')
+    contenedor_loader.style.opacity = 0
+    contenedor_loader.style.visibilty = 'hidden'
+})
