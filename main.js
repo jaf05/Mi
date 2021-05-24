@@ -53,7 +53,12 @@ sr.reveal('.contact__input', {delay: 400})
 sr.reveal('.contact__button', {delay: 600})
 
 window.addEventListener('load', () => {
-    const contenedor_loader = document.querySelector('.contenedor_loader')
+    const contenedor_loader = document.querySelector('.contenedor_loader');
+    
     contenedor_loader.style.opacity = 0
-    contenedor_loader.style.visibilty = 'hidden'
-})
+    contenedor_loader.style.visibilty = 'hidden';
+
+});
+window.onload = function () {
+    document.getElementById("contenedorLoader").style.zIndex = "-999";
+  }
